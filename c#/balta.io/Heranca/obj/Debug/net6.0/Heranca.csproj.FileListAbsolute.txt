@@ -1,0 +1,15 @@
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\Heranca.csproj.AssemblyReference.cache
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\Heranca.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\Heranca.AssemblyInfoInputs.cache
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\Heranca.AssemblyInfo.cs
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\Heranca.csproj.CoreCompileInputs.cache
+D:\dev\dennis\curso-csharp\balta.io\Heranca\bin\Debug\net6.0\Heranca.exe
+D:\dev\dennis\curso-csharp\balta.io\Heranca\bin\Debug\net6.0\Heranca.deps.json
+D:\dev\dennis\curso-csharp\balta.io\Heranca\bin\Debug\net6.0\Heranca.runtimeconfig.json
+D:\dev\dennis\curso-csharp\balta.io\Heranca\bin\Debug\net6.0\Heranca.dll
+D:\dev\dennis\curso-csharp\balta.io\Heranca\bin\Debug\net6.0\Heranca.pdb
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\Heranca.dll
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\refint\Heranca.dll
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\Heranca.pdb
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\Heranca.genruntimeconfig.cache
+D:\dev\dennis\curso-csharp\balta.io\Heranca\obj\Debug\net6.0\ref\Heranca.dll

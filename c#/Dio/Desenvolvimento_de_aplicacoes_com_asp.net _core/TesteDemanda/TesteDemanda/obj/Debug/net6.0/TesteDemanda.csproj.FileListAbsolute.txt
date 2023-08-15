@@ -1,0 +1,15 @@
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\bin\Debug\net6.0\TesteDemanda.exe
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\bin\Debug\net6.0\TesteDemanda.deps.json
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\bin\Debug\net6.0\TesteDemanda.runtimeconfig.json
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\bin\Debug\net6.0\TesteDemanda.dll
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\bin\Debug\net6.0\TesteDemanda.pdb
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\TesteDemanda.csproj.AssemblyReference.cache
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\TesteDemanda.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\TesteDemanda.AssemblyInfoInputs.cache
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\TesteDemanda.AssemblyInfo.cs
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\TesteDemanda.csproj.CoreCompileInputs.cache
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\TesteDemanda.dll
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\refint\TesteDemanda.dll
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\TesteDemanda.pdb
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\TesteDemanda.genruntimeconfig.cache
+D:\dev\dennis\curso-csharp\Dio\Desenvolvimento_de_aplicacoes_com_asp.net _core\TesteDemanda\TesteDemanda\obj\Debug\net6.0\ref\TesteDemanda.dll

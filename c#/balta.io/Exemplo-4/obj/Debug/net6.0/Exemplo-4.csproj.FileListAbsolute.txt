@@ -1,0 +1,15 @@
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\bin\Debug\net6.0\Exemplo-4.exe
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\bin\Debug\net6.0\Exemplo-4.deps.json
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\bin\Debug\net6.0\Exemplo-4.runtimeconfig.json
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\bin\Debug\net6.0\Exemplo-4.dll
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\bin\Debug\net6.0\Exemplo-4.pdb
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\Exemplo-4.csproj.AssemblyReference.cache
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\Exemplo-4.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\Exemplo-4.AssemblyInfoInputs.cache
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\Exemplo-4.AssemblyInfo.cs
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\Exemplo-4.csproj.CoreCompileInputs.cache
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\Exemplo-4.dll
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\refint\Exemplo-4.dll
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\Exemplo-4.pdb
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\Exemplo-4.genruntimeconfig.cache
+D:\dev\dennis\curso-csharp\balta.io\Exemplo-4\obj\Debug\net6.0\ref\Exemplo-4.dll

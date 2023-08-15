@@ -1,0 +1,216 @@
+CLI - Command Line Interface (Interface de linha de comando)
+
+dotnet --version - verifica a versão atual
+
+dotnet --list-sdks - lista as sdks instalados
+
+dotnet --list-runtime - lista as runtimes instaladas
+
+dotnet restore - busca todas os pacotes que a aplicação precisa para executar e instalar todas as dependências
+
+dotnet build - faz a compilação da nossa aplicação
+
+dotnet clean - limpa todo arquivo de cache
+
+dotnet run - start nossa aplicação
+
+TIPOS DE PROJETO
+
+Class library -  o resultado final é uma DLL
+              - não possui Interface
+
+Console Application - o resultado final é uma aplicação que roda no terminal
+                    - pode receber dados, esperar input dos usuários
+
+Projeto Web - ASP.NET.Web, ASP.NET.MVC, ASP.NET.WebAPI
+
+Projeto Teste - micrsosft testes
+
+VARIÀVEIS DE AMBIENTE
+
+dotnet run --environment=development - para ambiente de desenvolvimento
+
+dotnet run --environment=production - para ambiente de producão
+
+ESTRUTURA DE UM APP
+arquivo.csproj - formato XML
+               - definições do Projeto
+               - presente em todo Projeto
+
+program.cs - arquivo principal
+           - porta de entrada
+           - será o primeiro a ser executado
+
+NAMESPACE - faz uma divisão lógica
+          - não podemos ter dois arquivos com mesmo nome na pasta
+          - o escopo do namespace é definido dentro das chaves
+          - para importar precisamos utilizar a palavra reserva @using 'nome-do-namespace'
+
+USING - faz importações no qual definem as bibliotecas que nosso programa irá utilizar
+      - precisamos importar o que desejamos para poder trabalhar
+      - sempre utilizar no começo da aplicação
+      - organiza nosso código em pastas e namespace é fundamental
+
+COMENTARIOS - podemos comentar por linha, multiplas linhas ou por XML
+
+TIPOS PRIMITIVOS - Tipos Simples (Simple types)
+                 - Enumeradores (Enums)
+                 - Estruturas (Structs)
+                 - Tipos Nulos (Nullable types)
+
+SYSTEM - Tudo começa de um tipo base chamado system
+       - todo e qualquer tipo, seja built-in ou complexo deriva dele
+       
+BYTE - representa um byte de fato
+     - 1byte = 8 bits
+     - byte = 0 até 255
+     
+SBYTE - (Signed byte) permite valores negativos
+      - sbyte = -128 até 127
+
+NUMEROS INTEIROS - short = 16bits = 32.768 até 32767
+                 - ushort = 16 bits = 0 até 65.535
+                 - int = 32 bits = -2.147.483.648 até 2.147.483.647
+                 - uint = 32 bits = 0 até 4.294.967.295
+                 - long = 64 bits = -9.223.372.036.854.775.808 até 9.223.372.036.854.775.807
+                 - ulong = 64bits = 0 até 18.446.744.073.709.551.615
+
+NUMEROS REAIS - float = 32 bits = -3.402823e38 até 3.402823e38
+              - double = 64 bits = -1,79769313486232e308 até 1.7976931346232e308
+              - decimal = 128 bits = (+ ou -) 1.0 x 20e-28 até 7.9 x 10e28
+              - para definir que algo float precisamos incluir o f no final
+              - para definir um decimal precisamos colocar o m no final
+
+BOOL (Boolean) - True ou false
+
+CHAR - utilizado para armazenar apenas um caracter no formato unicode
+     - 16 bits
+     - qualquer caracter
+     - tem que usar as simples para caracterizar um caracter
+
+STRING - armazena uma cadeia de caracteristica
+       - caracterizado por aspas duplas
+
+VAR - substitui o nome de qualquer tipo
+
+OBJECT - Tipo genérico que recebe qualquer valor ou objeto
+       - Pode ser usado caso não saiba a informação ou ela seja de tipos diferentes
+       - Não possui intellisense
+
+NULLABLE TYPES - vazio, nulo
+               - diferente de zero ou uma string vazia
+               - todo tipo primitivo ou complexo pode receber o valor Nullable
+               - o tipo deve ser marcado como nullable types 
+
+ALIAS - apelido que todo tipo do .Net tem
+      - Ex: int num = 1; é um alias
+            Int32 num = 2; Tipo
+      
+VALORES PADROES - todo tipo built-in já possui um valor padrão
+
+CONVERSAO IMPLICITA - podem ser executadas apenas com passagem de dados
+                    - possuem tipos compativeis
+
+CONVERSAO EXPLICITA - ocorre quando os tipos não são compatíveis
+                    - é dada pelo uso do tipo entre parenteses antes da atribuição
+
+PARSE - converte um caracter ou string para um tipo qualquer
+      - caso haja alguma incompatibilidade gera um erro
+
+CONVERT - perimte converter vários tipos de valor
+        - devemos informar o tipo na chamada da conversao.
+
+FUNÇÕES E METODOS
+  - podemos segmentar nosso programa em funções
+  - possui um retorno, um nome e parâmetros
+  - começam sempre com maiúscula
+  - esta composição é a camada de assinatura
+  - parâmetros opcionais deve vir por último
+
+VALUE TYPES E REFERENCE TYPE
+  - Heap armazena os dados
+  - Stack armazena as referÇencias para os dados
+  - qualquer tipo é tratado com referencia ou valor
+
+STRUCTS
+  - tipos de dado estruturado
+  - apenas a estrutura, esqueleto
+  - tipo valor
+  - armazenam apenas outros tipos de dados
+  - definido pela palavea Structs
+  - composto de propriedades e metodos
+  - nome sempre maiusculo
+  Ex: struct Product { 
+    propriedades
+
+    metodos
+  }
+  -Metodo construtor é sempre chamado ao iniciar o metodo
+
+  ENUMERADORES
+   - É um inteiro usao para fornecer uma melhor visualização do código
+   - Substituem o numero de inteiros
+   - usadoo em listas curtas
+   - usados em dados fixos
+   - sempre começamos com um e maiusculo
+   EX: enum EEstadoCivil
+   {
+      Solteiro = 1,
+      Casado = 2,
+      Divorciado = 3
+   }
+
+USING() {} - Usamos sempre para abir e fechar arquivos, conexões, etc.
+
+STRINGS 
+ - GUID - é um identificador único
+ - ToString() - Converte a variável em uma string
+ - Substring() - pega uma parte da string inserindo com parâmetros início e fim.  
+ - String.Format - busca dentro das chaves e substitui pelos itens após a virgula.
+ - $@ - permite quebrar linha
+ - CompareTo() - Compara se as strings são iguais
+ - Contains() - verifica se a string ou parte dela está na string
+ - StartsWith() - verifica se a string começa com a string informada 
+ - EndsWith() - verificar se a string termina com a string informda.
+ - Equals() - verifica se a string é igual a string informada.
+ - INsert() - faz a inserção do item na posição informada.
+ - StringBuilder - 
+
+ DATAS
+  - AddDays, AddMonth, AddYears - acrescentam dia, mês e ano.
+
+CULTUREINFO
+ - Serve para pegar as informações do timezone de onde a pessoa está.
+ - EX: var a = new Culture("pt-BR);
+
+TIMEZONE
+ - .Utc - pega a hora universal.
+
+TIMESPAN
+ - é uma medida para data e hora universal que dá uma fração de segundo
+
+OUTROS FUNÇÕES DE DATAS 
+ - DaysInMonth - verifica quantos dias tem um mês
+ - DayOfWeek = verifica quantos dias há na semana
+ 
+
+ MOEDAS
+  - Quanddo trabalhamos com moedas uma boa opção é trabalhar com decimal
+
+FORMATANDO MOEDAS
+  - Formas de formatar moedas:
+    - CultureInfo
+    - G - especifica sempre com número padrão
+    - C - currency colcando no padrão de moeda do país local
+
+ARRAYS
+  - Sempre precisamos declarar antes new tipo[tamanho] {valor1, valor2, valoe3}
+  - Evite fazer tudo dentro um try catch
+  - Sempre trate os erros dos mais especificos para os mais genericos
+  - Disparar um erro podemos utilizar um throw new Exception()
+
+  Customizar execeções
+    - Pode herdar exceções
+
+  Finally
+    - Se precisar passar algo ao final, precisamos adicionar  o finally e colocar uma mensagem por exemplo

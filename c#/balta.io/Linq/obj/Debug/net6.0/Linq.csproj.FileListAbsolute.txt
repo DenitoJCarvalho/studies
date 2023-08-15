@@ -1,0 +1,15 @@
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\Linq.csproj.AssemblyReference.cache
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\Linq.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\Linq.AssemblyInfoInputs.cache
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\Linq.AssemblyInfo.cs
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\Linq.csproj.CoreCompileInputs.cache
+D:\dev\dennis\curso-csharp\balta.io\Linq\bin\Debug\net6.0\Linq.exe
+D:\dev\dennis\curso-csharp\balta.io\Linq\bin\Debug\net6.0\Linq.deps.json
+D:\dev\dennis\curso-csharp\balta.io\Linq\bin\Debug\net6.0\Linq.runtimeconfig.json
+D:\dev\dennis\curso-csharp\balta.io\Linq\bin\Debug\net6.0\Linq.dll
+D:\dev\dennis\curso-csharp\balta.io\Linq\bin\Debug\net6.0\Linq.pdb
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\Linq.dll
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\refint\Linq.dll
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\Linq.pdb
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\Linq.genruntimeconfig.cache
+D:\dev\dennis\curso-csharp\balta.io\Linq\obj\Debug\net6.0\ref\Linq.dll

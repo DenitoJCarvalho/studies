@@ -1,0 +1,15 @@
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\bin\Debug\net6.0\Editor-Html.exe
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\bin\Debug\net6.0\Editor-Html.deps.json
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\bin\Debug\net6.0\Editor-Html.runtimeconfig.json
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\bin\Debug\net6.0\Editor-Html.dll
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\bin\Debug\net6.0\Editor-Html.pdb
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\Editor-Html.csproj.AssemblyReference.cache
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\Editor-Html.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\Editor-Html.AssemblyInfoInputs.cache
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\Editor-Html.AssemblyInfo.cs
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\Editor-Html.csproj.CoreCompileInputs.cache
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\Editor-Html.dll
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\refint\Editor-Html.dll
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\Editor-Html.pdb
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\Editor-Html.genruntimeconfig.cache
+D:\dev\dennis\curso-csharp\balta.io\Editor-Html\obj\Debug\net6.0\ref\Editor-Html.dll
