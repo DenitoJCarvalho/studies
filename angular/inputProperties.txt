@@ -1,0 +1,6 @@
+
+@Input() nome:tipo = valor;
+
+• Quando usamos o decorator @Input() conseguimos expor essa entrada para que ela receba informação do seu elemento pai.
+
+

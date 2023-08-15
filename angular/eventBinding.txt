@@ -25,6 +25,6 @@
 </section>
 
 • todo evento deve ser colocado entre parenteses "(evento)".
-• por padrão antes do nome do evento utilizamos "on".
+• por convenção antes do nome do evento utilizamos "on".
 • para chamar o próprio evento utilizamos "(evento)=onEvento($event)".
 • também podemos declarar uma variável ao invés de utilizar $event.

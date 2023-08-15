@@ -1,0 +1,2 @@
+• Utilizamos o decorator @Output();
+• Possibilita que o elemento escute as alterações que foram feitas e informa o evento;
