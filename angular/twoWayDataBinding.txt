@@ -1,0 +1,34 @@
+• TwoWayDataBinding é uma forma de disponibilizar os dados de forma bidirecional, ou seja, em ambos os sentidos.
+  Valor do Template para o Componente e vice-versa.
+
+[(ngModel)]="propriedade" ↔
+
+<section>
+  <article>
+    <h3>Two Way Data Binding</h3>
+
+    <!-- Utilizando de forma separada a prorpiedade e o evento -->
+    <div>
+      <input
+        type="text"
+        [value]="propriedade"
+        (input)="nome = $event.target.value"
+      />
+
+      <!-- utilzando a diretiva ngModel para a propriedade e ngModelChange para o evento -->
+      <input
+        type="text"
+        [ngModel]="propriedade"
+        (ngModelChange)="propriedade = $event"
+      />
+
+      <!-- Usando two way data binding -->
+      <input
+        type="text"
+        [(ngModel)]="propriedade"
+      />
+    </div>
+  </article>
+</section>
+
+• Quando estamos trabalhando com two way data binding vamos trabalhar com "ngModel" e ele faz parte FormsModule do @angular/forms.
