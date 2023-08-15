@@ -1,0 +1,30 @@
+<section class="event-binding">
+
+  <article>
+    <h3>Event binding</h3>
+  </article>
+
+  <div>
+  <!-- Exemplo sem parâmetro -->
+    <button
+      (click)="onEvento()" 
+      class="btn btn-primary"
+    >Me Clique</button>
+
+    <!-- Passando o próprio elemento como padrão -->
+    <button
+      (keyup)=onEvento($event)
+    >Me Clique 1</button>
+
+    <button
+      #variável
+      (click)="onEvent(variável.propriedade)"
+    >Me Clique 2</button>
+  </div>
+
+</section>
+
+• todo evento deve ser colocado entre parenteses "(evento)".
+• por padrão antes do nome do evento utilizamos "on".
+• para chamar o próprio evento utilizamos "(evento)=onEvento($event)".
+• também podemos declarar uma variável ao invés de utilizar $event.

@@ -1,0 +1,14 @@
+class binding
+
+<div 
+  [class.nome-da-classe]="classe.value == 'value'"
+></div>
+
+<div class={{ classe.value }}></div>
+
+style binding
+<div
+  [style.display]="classe.value == style ? 'condicao-1' : 'condicao-2'"
+></div>
+
+• Para declarar uma variável utilizamos "#nome-da-variável"

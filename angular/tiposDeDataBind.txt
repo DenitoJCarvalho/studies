@@ -1,0 +1,7 @@
+Types Property Bind
+
+<p>{{ valor }}</p>
+  - O angular consegue resolver expressões matemáticas na interpolação
+
+Property binding
+<p [propriedade]="valor"></p>
