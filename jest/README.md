@@ -10,6 +10,16 @@ Vou apresentar os itens conforme os estudos. Será inserido o item e uma breve e
 
 ## Requisitos
 
+node v18.17.1<br>
+npm v9.6.5
+
+Para instalação das dependências citadas abaixo digite: 
+
+**npm install**
+
+Irá instalar todos as dependências necessárias.
+
+
 Caso queira testar os testes que fiz nos estudos deverá instalar os seguintes pacotes como dependência de desenvolvimento:
 
 dependência | versão
