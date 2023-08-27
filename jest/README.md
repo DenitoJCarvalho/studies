@@ -5,7 +5,7 @@ Escolhi a ferramenta "_*Jest*_" para aprender mais sobre tdd visto que ela é ut
 
 Vou apresentar os itens conforme os estudos. Será inserido o item e uma breve explicação.
 
-#
+---
 
 <b style="color: #56F68E ">• toBe(value)</b> - compara os valores primitivos ou verifica a identidade referencial do objeto. Ele chama "__Object.is()__" para comparar o valor.
 
