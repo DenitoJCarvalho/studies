@@ -1,5 +1,5 @@
 
-# TDD - Teste Diven Design ( Desenvolvimento desenvolvido por testes)
+# TDD - Teste Diven Design ( Desenvolvimento Dirigido por Testes)
 
 Escolhi a ferramenta "_*Jest*_" para aprender mais sobre tdd visto que ela utiliza javascript - linguagem que tenho mais afinidade - e uma curva de aprendizagem mais curta.
 Já a linguagem escolhi o typescript que é um superset do javascript e me permite tipar os dados.
