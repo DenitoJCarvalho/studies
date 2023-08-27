@@ -1,5 +1,5 @@
 
-# TDD - Teste Diven Design ( Desenvolvimento desnevolvido por testes)
+# TDD - Teste Diven Design ( Desenvolvimento desenvolvido por testes)
 
 Escolhi a ferramenta "_*Jest*_" para aprender mais sobre tdd visto que ela é utiliza javascript - linguagem que tenho mais afinidade - e uma curva de aprendizagem mais curta.
 
