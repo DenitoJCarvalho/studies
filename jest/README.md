@@ -1,11 +1,34 @@
 
 # TDD - Teste Diven Design ( Desenvolvimento desenvolvido por testes)
 
-Escolhi a ferramenta "_*Jest*_" para aprender mais sobre tdd visto que ela é utiliza javascript - linguagem que tenho mais afinidade - e uma curva de aprendizagem mais curta.
+Escolhi a ferramenta "_*Jest*_" para aprender mais sobre tdd visto que ela utiliza javascript - linguagem que tenho mais afinidade - e uma curva de aprendizagem mais curta.
+Já a linguagem escolhi o typescript que é um superset do javascript e me permite tipar os dados.
 
 Vou apresentar os itens conforme os estudos. Será inserido o item e uma breve explicação.
 
 ---
+
+## Requisitos
+
+Caso queira testar os testes que fiz nos estudos deverá instalar os seguintes pacotes como dependência de desenvolvimento:
+
+dependência | versão
+------------ | ------
+@types/jest  | "^29.5.3"
+jest         | "29.6.2"
+ts-jest      | "^29.1.1"
+ts-node      | "^10.9.1"
+typescript   | "^5.1.6"
+
+Também aplicar as configurações disponível em  "_tsconfig.json_" e _jest.config.ts_.
+
+Para rodar os testes:
+
+
+1. npm run test => irá rodar todos os testes de uam só vez
+2. jest 'nome-do-arquivo' => irá rodar apenas aquele arquivo escolhido para teste.
+---
+
 
 <b style="color: #56F68E ">• toBe(value)</b> - compara os valores primitivos ou verifica a identidade referencial do objeto. Ele chama "__Object.is()__" para comparar o valor.
 
