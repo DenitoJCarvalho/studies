@@ -52,7 +52,11 @@ Não é recomendado usá-lo ao utlizar em comparações de pontos flutuantes, de
 
 
 No jest também há funções de comparações como:<br>
-  <b style="color: #56F68E ">• toBeGreaterThan()</b> - comparação maior que;<br>
-  <b style="color: #56F68E ">• toBeGreaterThanOrEqual()</b> - comparação maior que ou igual;<br>
-  <b style="color: #56F68E ">• toBeLessThan()</b> - comparação menor que;<br>
-  <b style="color: #56F68E ">• toBeLessThanOrEqual()</b> - comparação maior que ou igual;
+  <b style="color: #56F68E">• toBeGreaterThan()</b> - comparação maior que;<br>
+  <b style="color: #56F68E">• toBeGreaterThanOrEqual()</b> - comparação maior que ou igual;<br>
+  <b style="color: #56F68E">• toBeLessThan()</b> - comparação menor que;<br>
+  <b style="color: #56F68E">• toBeLessThanOrEqual()</b> - comparação maior que ou igual;
+
+<b style="color: #56F68E">• toMatch(regexp | string)</b> - serve para verificar se uma string correspode a uma expressão regular.
+
+
