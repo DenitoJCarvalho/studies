@@ -34,3 +34,5 @@ Essa condicional só retorna uma lista de cursos se houver algo.
     Não existem cursos para serem listados.
   </div>
 ```
+
+O ngIf é recomendado para árvore de elemntos grandes.
