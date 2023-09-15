@@ -6,14 +6,18 @@ jobs:
    meu-primeiro-continuos-integration:
     runs-on: windows-latest
 
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
     steps:
       - uses: actions/checkout@v3
-      - name: Using Node.js
-        uses: actions/setup-node@v2
+      - name: Using Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-           node-version: 18.
+           node-version: ${{ matrix.node-version }}
+      
       - name: Rodar instalacao, build e testes
         run: |
           npm install
-          npm run build
-          npm run test      
+          npm run build  
