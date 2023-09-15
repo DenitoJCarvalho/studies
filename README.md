@@ -7,5 +7,7 @@ Conforme for aprendendo sobre outras tecnologias irei atualizando aqui também.
 
 • Angular<br>
 • C#<br>
+• CI/CD
 • Jest<br>
-• js<br>
+• Js<br>
+• Node<br>
