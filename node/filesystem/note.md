@@ -62,3 +62,31 @@ readFile('../note/arquivo.html', { encoding: 'utf-8' }, (error) => {
 });
 
 ```
+
+### readFile()
+- recebe um path como parâmetro,;
+- dados do tipo string, array entre outros;
+- um calback.
+
+```
+writeFile('../note/writeFile.txt', 'É apenas um teste ...', (error) => {
+  if (error) throw error.message;
+
+  console.log('Novo arquivo...');
+});
+
+```
+
+### mkdir()
+- recebe um path com nome do diretório;
+- uma option que pode ser recursive _true_ ou _false_;
+- um callback.
+
+```
+mkdir('../note/note2/', { recursive: true }, (error) => {
+  if (error) throw error.message;
+
+  console.log('Criado novo diretório...');
+});
+
+```
