@@ -5,7 +5,7 @@ on:
     branches: ['*']
 
 jobs: 
-   meu-primeiro-continuos-integration:
+  meu-primeiro-continuos-integration:
     runs-on: windows-latest
 
     strategy:
@@ -13,15 +13,21 @@ jobs:
         node-version: ["18.x", "20.x"]
 
     steps:
-      - uses: actions/checkout@v3
-        name: Using Node.js ${{ matrix.node-version }}
-
-      - uses: actions/setup-node@v3
+      - name: Using Node.js ${{ matrix.node-version }}
+        uses: actions/checkout@v3
+        
+      - name: Configurar Node.js ${{ matrix.node-version }}  
+        uses: actions/setup-node@v3
         with:
            node-version: ${{ matrix.node-version }}
       
-      - name: Rodar instalacao, build e testes
-        run: npm ci
-             npm run build
-             npm run dev
-             npm run test  
+      - name: Rodar instalação e build
+        run: |
+          npm ci
+          npm run build
+      
+      - name: Rodar aplicação
+        run: npm run dev
+
+      - name: Rodar testes
+        run: npm run test
