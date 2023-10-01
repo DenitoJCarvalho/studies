@@ -8,7 +8,7 @@ Conforme for aprendendo sobre outras tecnologias irei atualizando aqui também.
 • Algoritmos<br>
 • Angular<br>
 • C#<br>
-• CI/CD
+• CI/CD<br>
 • Jest<br>
 • Js<br>
 • Node<br>
