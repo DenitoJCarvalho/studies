@@ -8,7 +8,6 @@ class Funcionario extends Pessoa {
   constructor(nome: string, sobrenome: string, job: string, salary: number) {
     super(nome, sobrenome);
 
-    this.nome = nome;
     this.sobrenome = sobrenome;
     this.job = job;
     this.salary = salary;

@@ -20,7 +20,6 @@ var Funcionario = /** @class */ (function (_super) {
     __extends(Funcionario, _super);
     function Funcionario(nome, sobrenome, job, salary) {
         var _this = _super.call(this, nome, sobrenome) || this;
-        _this.nome = nome;
         _this.sobrenome = sobrenome;
         _this.job = job;
         _this.salary = salary;
