@@ -2,14 +2,18 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ConfigModule } from '@nestjs/config';
 
-import { MYSqlConfig } from './data/mysql.config';
+import { MySqlConfig } from './data/mysql.config';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
     TypeOrmModule.forRootAsync({
-      useClass: MYSqlConfig,
-      inject: [MYSqlConfig]
+      useClass: MySqlConfig,
+      inject: [MySqlConfig]
     })
   ],
   controllers: [AppController],
