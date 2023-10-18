@@ -5,9 +5,9 @@ import { useContainer } from 'class-validator';
 import { AppModule } from './app.module';
 
 import { normalizePort } from '../server/server';
-import { dotenv } from '../environment/dotenv';
+import { env } from './environment/env'
 
-let port: number = normalizePort(dotenv.PORT_SERVER || '3000') as number;
+let port: number = normalizePort(env.PORT_SERVER || '3000') as number;
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
