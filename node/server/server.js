@@ -1,4 +1,4 @@
-export function normalizePort(val: string) {
+function normalizePort(val) {
   let port = parseInt(val);
 
   if (isNaN(port)) return false;
@@ -7,3 +7,5 @@ export function normalizePort(val: string) {
 
   return false;
 }
+
+export { normalizePort };
