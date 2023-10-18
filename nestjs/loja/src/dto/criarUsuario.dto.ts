@@ -26,4 +26,10 @@ export class CriarUsuarioDTO {
   @IsNotEmpty({ message: `senha não pode ser vazia.` })
   @MinLength(5, { message: `Senha precisa ter no mínimo 5 caracteres.` })
   senha: string;
+
+  createdAt: string;
+
+  updatedAt: string;
+
+  deletedAt: string;
 }

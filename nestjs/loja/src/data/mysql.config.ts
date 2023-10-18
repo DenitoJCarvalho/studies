@@ -19,7 +19,7 @@ export class MySqlConfig implements TypeOrmOptionsFactory {
       username: env.MYSQL_USERNAME,
       password: env.MYSQL_PASSWORD,
       database: env.MYSQL_DB,
-      entities: [],
+      entities: [__dirname + '/**/*.entity{.js, .ts}'],
       synchronize: true,
       charset: 'utf8',
       migrations: [],
