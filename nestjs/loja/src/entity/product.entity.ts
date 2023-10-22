@@ -9,7 +9,7 @@ export class ProcuctEntity {
   @PrimaryGeneratedColumn({ name: 'produto_id', unsigned: true, type: 'tinyint' })
   id: string;
 
-  @Column({ name: 'usuario_id', type: 'tinyint' })
+  @Column({ name: 'user_id', type: 'tinyint' })
   usuarioID: string;
 
   @Column({ name: 'nome', length: 100, type: 'varchar', nullable: false })
