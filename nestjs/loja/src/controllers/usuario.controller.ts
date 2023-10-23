@@ -33,7 +33,7 @@ export class usuarioControlller {
     userEntity.profissao = dataUser.profissao;
     userEntity.id = uuid();
 
-    this.user.save(dataUser);
+    this.usuarioService.criarUsuario(userEntity);
     return {
       message: `Usuário ID:${userEntity.id} criado com sucesso.`
     }

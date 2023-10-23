@@ -23,4 +23,8 @@ export class UserService {
 
     return usuariosMapeados;
   }
+
+  async criarUsuario(usuarioEntity: UserEntity) {
+    await this.userRepository.save(usuarioEntity);
+  }
 }

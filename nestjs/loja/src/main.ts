@@ -5,7 +5,7 @@ import { useContainer } from 'class-validator';
 import { AppModule } from './app.module';
 
 import { normalizePort } from '../server/server';
-import { env } from './environment/env'
+import { env } from './environment/env';
 
 let port: number = normalizePort(env.PORT_SERVER || '3000') as number;
 
@@ -23,7 +23,8 @@ async function bootstrap() {
   useContainer(app.select(AppModule), { fallbackOnErrors: true });
 
   await app.listen(port, () => {
-    console.log(`Server is running http://localhost:${port}`)
+    console.log(`Server is running http://localhost:${port}`);
+
   });
 }
 bootstrap();
