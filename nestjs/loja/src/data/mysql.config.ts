@@ -17,7 +17,7 @@ export class MySQLConfigService implements TypeOrmOptionsFactory {
       username: env.MYSQL_USERNAME,
       password: env.MYSQL_PASSWORD,
       database: env.MYSQL_DB,
-      entities: [__dirname + '/../**/*.entity.{js, ts}']
+      entities: [__dirname + '/src/entity/*.entity.ts']
     }
   }
 }

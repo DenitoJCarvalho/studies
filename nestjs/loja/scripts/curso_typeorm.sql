@@ -17,7 +17,13 @@ engine = 'InnoDB',
 charset = 'utf8mb4',
 collate = 'utf8mb4_general_ci' ;
 
-alter table usuarios add column senha varchar(100) not null;
+alter table usuarios add column senha varchar(100) not null after email;
+alter table usuarios modify column senha varchar(100) not null after email;
+alter table usuarios modify created_at datetime not null default now();
+alter table usuarios modify updated_at datetime not null default now();
+alter table usuarios modify deleted_at datetime;
+
+select * from usuarios;
 
 create table if not exists produtos
 (

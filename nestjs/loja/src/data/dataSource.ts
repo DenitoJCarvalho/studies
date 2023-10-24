@@ -2,6 +2,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 
 import { env } from '../environment/env';
 
+
 const dataSourceOptions: DataSourceOptions = {
   type: 'mysql',
   host: env.HOST,
@@ -9,10 +10,11 @@ const dataSourceOptions: DataSourceOptions = {
   username: env.MYSQL_USERNAME,
   password: env.MYSQL_PASSWORD,
   database: env.MYSQL_DB,
-  entities: [__dirname + '/../**/*.entity.{js, ts}'],
-  migrations: [__dirname + '/migrations/*.{js,ts}']
+  entities: [__dirname + '/src/entity/*.entity.ts'],
+  migrations: [__dirname + '/src/data/migrations/*.ts']
 }
 
-const dataSource = new DataSource(dataSourceOptions);
+export const dataSource = new DataSource(dataSourceOptions);
 
-export default dataSource;
+
+
