@@ -7,13 +7,19 @@ import { AutenticacaoController } from '../controllers/autenticacao.controller';
 
 import { AutenticacaoService } from '../services/autenticacao.service';
 
+import { env } from 'src/environment/env';
+
 @Module({
   imports: [
     UserModule,
-    JwtModule.register({
+    JwtModule.registerAsync({
+      useFactory: () => {
+        return {
+          secret: env.SEGREDO_SECRETO,
+          signOptions: { expiresIn: '24h' }
+        }
+      },
       global: true,
-      secret: 'SEGREDO_SECRETO',
-      signOptions: { expiresIn: '24h' }
     })
   ],
   controllers: [
