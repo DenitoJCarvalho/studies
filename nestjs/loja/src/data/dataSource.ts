@@ -10,8 +10,8 @@ const dataSourceOptions: DataSourceOptions = {
   username: env.MYSQL_USERNAME,
   password: env.MYSQL_PASSWORD,
   database: env.MYSQL_DB,
-  entities: [__dirname + '/src/entity/*.entity.ts'],
-  migrations: [__dirname + '/src/data/migrations/*.ts']
+  entities: [__dirname + '/src/entity/*.entity.{js | ts}'],
+  migrations: [__dirname + '/src/data/migrations/*.{js | ts}']
 }
 
 export const dataSource = new DataSource(dataSourceOptions);

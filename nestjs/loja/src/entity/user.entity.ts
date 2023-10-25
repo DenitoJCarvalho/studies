@@ -6,7 +6,7 @@ import {
 @Entity({ name: 'usuarios', engine: 'innodb', synchronize: true })
 export class UserEntity {
 
-  @PrimaryGeneratedColumn({ name: 'usuario_id', unsigned: true, type: 'tinyint' })
+  @PrimaryGeneratedColumn({ name: 'id', unsigned: true, type: 'tinyint' })
   id: string;
 
   @Column({ name: 'nome', length: 100, type: 'varchar', nullable: false })

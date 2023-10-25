@@ -10,6 +10,7 @@ import { AtualziarUsuario } from '../dto/atualizarUsuario.dto';
 import { UserEntity } from '../entity/user.entity';
 
 import { UserService } from '../services/user.services';
+import { HashearSenha } from 'src/pipes/hashear-senha';
 
 
 @Controller('/usuarios')
@@ -23,12 +24,15 @@ export class usuarioControlller {
   ) { }
 
   @Post()
-  async create(@Body() dataUser: CriarUsuarioDTO) {
+  async create(
+    @Body() { senha, ...dataUser }: CriarUsuarioDTO,
+    @Body('senha', HashearSenha) senhaHasheada: string
+  ) {
 
     const userEntity = new UserEntity();
 
     userEntity.email = dataUser.email;
-    userEntity.senha = dataUser.senha;
+    userEntity.senha = senhaHasheada
     userEntity.nome = dataUser.nome;
     userEntity.profissao = dataUser.profissao;
     userEntity.id = uuid();

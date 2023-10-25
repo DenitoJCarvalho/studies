@@ -6,6 +6,8 @@ import { UserModule } from './modules/usuario.module';
 
 import { MySQLConfigService } from './data/mysql.config';
 
+import { AutenticacaoService } from './services/autenticacao.service';
+
 
 @Module({
   imports: [
@@ -17,6 +19,9 @@ import { MySQLConfigService } from './data/mysql.config';
       useClass: MySQLConfigService,
       inject: [MySQLConfigService]
     })
+  ],
+  providers: [
+    { provide: AutenticacaoService, useClass: AutenticacaoService }
   ],
 
 })

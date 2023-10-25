@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
 
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 
 import { listUserDTO } from '../dto/listUser.dto';
@@ -21,10 +21,15 @@ export class UserService {
       new listUserDTO(user.id, user.nome);
     });
 
+    if (listaDeUsuarios === null) throw new NotFoundException('Lista de usuário não encontrada.');
+
     return usuariosMapeados;
   }
 
   async criarUsuario(usuarioEntity: UserEntity) {
+
+    if (usuarioEntity === null) throw new BadRequestException('Erro ao cadastrar usuáriio');
+
     await this.userRepository.save(usuarioEntity);
   }
 }

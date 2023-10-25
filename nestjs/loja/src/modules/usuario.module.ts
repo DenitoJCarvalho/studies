@@ -10,12 +10,14 @@ import { EmailValidator } from '../validators/email.validator';
 import { UserEntity } from '../entity/user.entity';
 
 import { UserService } from '../services/user.services';
+import { AutenticacaoModule } from './autenticacao/autenticacao.module';
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([
       UserEntity
-    ])
+    ]),
+    AutenticacaoModule
   ],
   controllers: [
     usuarioControlller
