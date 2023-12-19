@@ -3,15 +3,18 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Configuração para o banco de dados
 var connectionString = builder.Configuration.GetConnectionString("FilmeConnection");
 
+//Configuração para o modelo de banco de dados (MySQL)
 builder.Services.AddDbContext<FilmeContext>(options => 
 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
 );
 
+//Configuração para o AutoMapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
