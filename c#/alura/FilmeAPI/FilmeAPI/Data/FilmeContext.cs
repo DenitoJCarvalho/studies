@@ -11,4 +11,6 @@ public class FilmeContext : DbContext
     ) : base(options) { }
 
     public DbSet<Filme> FIlmes { get; set; }
+    public DbSet<Cinema> Cinemas { get; set; }
+    public DbSet<Endereco>Enderecos { get; set; }
 }
