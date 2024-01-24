@@ -11,5 +11,8 @@ Conforme for aprendendo sobre outras tecnologias irei atualizando aqui também.
 • CI/CD<br>
 • Jest<br>
 • Js<br>
+• Nestjs<br>
 • Node<br>
 • Python<br>
+• Typescript<br>
+• Xml
