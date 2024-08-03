@@ -1,0 +1,31 @@
+name: Continuos integration
+
+#evento
+on:
+  #etiqueta
+  label:
+    types: [created, deleted, edited]
+
+  #nome do evento
+  push:
+    branches: ["main"]
+    tags: [v.1.0.0]
+
+    #branches, branches-ignore, tags, tags-ignore aceitam padrões glob [*, **, +, ?, !]
+
+jobs:
+  continuos-integration: #nome do trabalho
+    runs-on: windows-latest #máquina que hospederá meu fluxo para execuções
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Using Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20.x
+
+      - name: run install, build and test
+        run: |
+          npm install
+          npm run build
+          npm run test
