@@ -8,7 +8,7 @@ Aula sobre docker
 ```
 docker ps
 ```
-Mostra todos os constainer que estão rodando. Trazend informações como:
+Mostra todos os container que estão rodando. Trazend informações como:
 - Container ID: identificador do container
 - Image: a imagem do qual esse container vem
 - Command: comando que ele foi iniciado o container
