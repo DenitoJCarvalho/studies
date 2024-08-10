@@ -1,0 +1,72 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url('https://wallpapers.com/images/hd/cartoon-forest-background-1920-x-1080-3si03xbjuob5zkdp.jpg') 0% 100% no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.runner {
+  position: absolute;
+  width: 100px;
+  margin-top: calc(100vh - 200px);
+  animation: Runner 3s infinite;
+  /*transition: 300ms ease-out; */
+}
+
+.runner:nth-child(1) {
+  margin-left: 160px;
+}
+
+
+@keyframes Runner {
+  0% {
+    transform: translate(100px);
+  }
+
+  10% {
+    transform: translate(200px);
+  }
+
+  20% {
+    transform: translate(300px, -300px);
+  }
+
+  30% {
+    transform: translate(400px);
+  }
+
+  40% {
+    transform: translate(500px);
+  }
+
+  50% {
+    transform: translate(600px);
+  }
+
+  60% {
+    transform: translate(700px);
+  }
+
+  70% {
+    transform: translate(800px);
+  }
+
+  80% {
+    transform: translate(900px);
+  }
+
+  90% {
+    transform: translate(1100px);
+  }
+
+  100% {
+    transform: translate(1300px);
+  }
+}
