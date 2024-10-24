@@ -2,13 +2,15 @@ import { AfterViewInit, Component, inject, ViewChild } from '@angular/core';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, Sort, MatSortModule } from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { LiveAnnouncer } from '@angular/cdk/a11y';
 
 @Component({
   selector: 'app-table',
   standalone: true,
   imports: [
-    MatTableModule, MatPaginatorModule, MatSortModule
+    MatTableModule, MatPaginatorModule, MatSortModule, MatFormFieldModule, MatInputModule
   ],
   templateUrl: './table.component.html',
   styleUrl: './table.component.css'
@@ -77,6 +79,7 @@ export class TableComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
+
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
@@ -88,6 +91,11 @@ export class TableComponent implements AfterViewInit {
     } else {
       this._liveAnnouncer.announce(`Sorting cleared.`);
     }
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
 

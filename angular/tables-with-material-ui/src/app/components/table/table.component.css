@@ -1,0 +1,16 @@
+.mat-mdc-form-field {
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.content-btn-reset {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
