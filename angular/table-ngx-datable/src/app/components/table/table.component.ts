@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { NgxDatatableModule, SelectionType } from '@swimlane/ngx-datatable';
 
 @Component({
   selector: 'app-table',
@@ -12,12 +12,16 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 })
 export class TableComponent {
 
-  // header: string[] = ['ID', 'Chave Vendas', 'Localizador Vendas', 'Chave Online', 'Localizador Online', 'Chave Cartões', 'Localizador Cartões', 'data'];
-
   columns = [
-    { prop: 'name' }, { name: 'Chave Vendas' }, { name: 'Localizdor Vendas' }
+    { prop: 'ID', name: 'ID' },
+    { prop: 'ChaveVendas', name: 'Chave Vendas' },
+    { prop: 'LocalizadorVendas', name: 'Localizdor Vendas' },
+    { prop: 'ChaveOnline', name: 'Chave Online' },
+    { prop: 'LocalizadorOnline', name: 'Localizador Online' },
+    { prop: 'ChaveCartoes', name: 'Chave Cartões' },
+    { prop: 'LocalizadorCartoes', name: 'Localizador Cartões' },
+    { prop: 'Data', name: 'Data' }
   ];
-
 
   data = [
     {
@@ -71,5 +75,7 @@ export class TableComponent {
       Data: '01/09/2024'
     }
   ];
+
+  selectionType = SelectionType.single;
 
 }

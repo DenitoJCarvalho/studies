@@ -1,5 +1,7 @@
-<ng-container>
-  <ngx-datatable [rows]="data" [columns]="columns">
+<ng-container class="table">
+  <ngx-datatable [rows]="data" [columns]="columns" [columnMode]="'flex'" [headerHeight]="50" [footerHeight]="50"
+    [limit]="2" [loadingIndicator]="true" [rowHeight]="36" [scrollbarH]="true" [selectionType]="selectionType"
+    class="material">
 
   </ngx-datatable>
 </ng-container>
