@@ -1,4 +1,4 @@
-using minimal.api.DTO;
+using MinimalApi.Domain.Dto;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();

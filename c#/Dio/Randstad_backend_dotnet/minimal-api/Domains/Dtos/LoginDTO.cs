@@ -1,5 +1,5 @@
 
-namespace minimal.api.DTO;
+namespace MinimalApi.Domain.Dto;
 public record LoginDTO
 {
   public string Email { get; set; } = default!;
