@@ -47,7 +47,7 @@ namespace minimal_api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Administradres");
+                    b.ToTable("Administradores");
                 });
 #pragma warning restore 612, 618
         }

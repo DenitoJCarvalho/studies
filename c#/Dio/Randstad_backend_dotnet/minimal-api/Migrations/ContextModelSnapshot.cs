@@ -45,6 +45,15 @@ namespace minimal_api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Administradres");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "administrador@teste.com",
+                            Perfil = "Adm",
+                            Senha = "12345678"
+                        });
                 });
 #pragma warning restore 612, 618
         }
