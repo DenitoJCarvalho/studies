@@ -10,6 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IAdministradorService, AdministadorService>();
 
+//Configuração do swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 //Conexão com banco de dados
 builder.Services.AddDbContext<Context>(options =>
 {
@@ -21,6 +25,8 @@ builder.Services.AddDbContext<Context>(options =>
 
 
 var app = builder.Build();
+
+
 
 app.MapGet("/", () => "Hello World!");
 
@@ -35,5 +41,8 @@ app.MapPost("/login", ([FromBody] LoginDTO loginDTO, IAdministradorService admin
     return Results.Unauthorized();
   }
 });
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.Run();
