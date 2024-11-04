@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-
+using minimal_api.Domains.Entities;
 using MinimalApi.Domain.Entities;
 
 namespace MinimalApi.Infrastructure.Db;
@@ -15,7 +15,7 @@ public class Context : DbContext
     }
 
     public DbSet<Administrador> Administradres { get; set; } = default!;
-
+    public DbSet<Veiculo> Veiculos { get; set; } = default!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
