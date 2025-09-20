@@ -1,0 +1,41 @@
+@web_api_HostAddress = http://localhost:5057
+
+GET {{web_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{web_api_HostAddress}}/pizza/
+Accept: application/json
+
+###
+GET {{web_api_HostAddress}}/pizza/2
+Accept: application/json
+
+###
+GET {{web_api_HostAddress}}/pizza/10
+Accept: application/json
+
+###
+POST {{web_api_HostAddress}}/pizza/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Calabresa",
+  "isGlutenFree": false
+}
+
+###
+PUT {{web_api_HostAddress}}/pizza/2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Updated Pizza",
+  "isGlutenFree": true
+}
+
+###
+DELETE {{web_api_HostAddress}}/pizza/4
+Accept: application/json
