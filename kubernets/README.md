@@ -23,4 +23,29 @@ spec: #Especificação do Pod
 **Observação**: para rodar suas configurações é preciso instalar `kubectl - (kubernetes control)` com suas dependências.
 
 
+### Modelo de arquivo para deployment
+
+```yml
+apiVersion: apps/v1 #Versão da API
+kind: Deployment #Tipo do objeto
+metadata: #Metadados do Pod
+  name: app-html-deployment #Nome do objeto
+  labels:
+   app: app-html #Rótulo do Pod
+spec: #Especificação do Pod
+  replicas: 3 # Número de replicas
+  selector:
+    matchLabels:
+      app: app-html # Arquivo que deve ser replicado
+  template:
+    metadata:
+      labels:
+        app: app-html # Modelo padrão de replica
+    spec:
+      containers:
+      - name: app-html # Nome do container
+        image: httpd:latest # Nome da imagem
+        ports: # Portas expostas pelo contêiner
+        - containerPort: 80
+```
 
